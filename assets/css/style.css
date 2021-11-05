@@ -1225,7 +1225,7 @@ button#Switcher__control {
 /* End Color NIp */
 /* Start ScrollUp */
 #scrollUp {
-    background: #4272d7;
+    background: var(--second-gray);
     height: 40px;
     width: 40px;
     position: absolute;
