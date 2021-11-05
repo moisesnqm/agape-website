@@ -35,6 +35,8 @@
        --color-white: #ffffff;
        --color-border: #dddddd;
        --font-lato: 'Lato', sans-serif;
+       --first-gray: #c8c7c7;
+       --second-gray: #727272;
    }
    /* global classes */
    .font-os {
@@ -76,7 +78,7 @@
    a:hover,
    .main-menu li a:hover,
    .footer-menu li a:hover {
-      color: #4272d7;
+      color: var(--first-gray);
       text-decoration: none;
    }
    a,
@@ -195,7 +197,7 @@
       position: relative
    }
    .theme-overlay:before {
-      background: #4272d7 none repeat scroll 0 0;
+      background: var(--second-gray) none repeat scroll 0 0;
       content: "";
       height: 100%;
       left: 0;
@@ -212,8 +214,8 @@
 
    .btn {
       -moz-user-select: none;
-      background: #4272d7 none repeat scroll 0 0;
-      border: 2px solid #4272d7;
+      background: var(--second-gray) none repeat scroll 0 0;
+      border: 2px solid var(--color-black);
       border-radius: 0;
       color: #fff;
       cursor: pointer;
@@ -235,7 +237,7 @@
    }
    .btn:hover {
       background: transparent;
-      color: #4272d7
+      color: var(--color-white)
    }
    .btn.btn-lg {
       padding: 10px 25px;
@@ -256,10 +258,13 @@
       text-decoration: underline;
    }
    .theme-bg {
-      background: #4272d7;
+      background: var(--second-gray);
    }
    .gray-bg {
       background: #f0f0f0;
+    }
+   .gray-dark-bg {
+      background: #787878;
    }
    .black-bg {
       background: #171a21;
@@ -316,7 +321,7 @@
    }
 
    .owl-carousel .owl-dots button.active {
-      background: #4272d7;
+      background: var(--color-white);
    }
 
    .owl-carousel .owl-dots {
@@ -346,8 +351,9 @@
     padding: 0px 10px;
 }
 .header-area {
-    border-top: 5px solid #4272d7;
+    border-top: 5px solid var(--second-gray);
     padding: 30px 0;
+    background: var(--color-black);
 }
 .main-menu li.search-trigger a {
     border-left: 1px solid #666666;
@@ -357,15 +363,22 @@
 .main-menu {
     margin-top: 5px;
 }
+
 .header-area.sticky {
     position: fixed;
     width: 100%;
     z-index: 9;
-    background: rgba(255, 255, 255);
+    background: var(--color-black);
     padding: 20px 0;
 }
+
+.site-logo {
+    width:540px; /* you can use % */
+    height: auto;
+}
+
 .main-menu li.active a {
-    color: #4272d7;
+    color: var(--first-gray);
 }
 
 
